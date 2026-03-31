@@ -3,6 +3,6 @@ Post-GWAS analysis scripts for "Sex differences in LDL-C genetic architecture an
 
 ## Data Availability
 The GWAS summary statistics used in this analysis are available on Zenodo:  
-[https://doi.org/10.5281/zenodo.19333987)](https://doi.org/10.5281/zenodo.19333987)
+[https://doi.org/10.5281/zenodo.19333987](https://doi.org/10.5281/zenodo.19333987)
 
 This repo is currently a work in progress.
