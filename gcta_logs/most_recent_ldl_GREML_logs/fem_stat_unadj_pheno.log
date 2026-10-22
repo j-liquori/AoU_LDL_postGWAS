@@ -1,0 +1,78 @@
+*******************************************************************
+* Genome-wide Complex Trait Analysis (GCTA)
+* version v1.94.4 Linux
+* Built at Apr  7 2025 11:00:19, by GCC 8.3
+* (C) 2010-present, Yang Lab, Westlake University
+* Please report bugs to Jian Yang <jian.yang@westlake.edu.cn>
+*******************************************************************
+Analysis started [TIMESTAMP]
+Hostname: [REDACTED]
+
+Accepted options:
+--grm [REDACTED_PATH]
+--pheno [REDACTED_PATH]
+--qcovar [REDACTED_PATH]
+--reml
+--out [REDACTED_PATH]
+--thread-num 72
+
+Note: the program will be running on 72 threads.
+
+Reading IDs of the GRM from [REDACTED_PATH].
+47744 IDs are read from [REDACTED_PATH].
+Reading the GRM from [REDACTED_PATH].
+GRM for 47744 individuals are included from [REDACTED_PATH].
+Reading phenotypes from [REDACTED_PATH].
+Non-missing phenotypes of 6085 individuals are included from [REDACTED_PATH].
+Reading quantitative covariate(s) from [REDACTED_PATH].
+12 quantitative covariate(s) of 49649 individuals are included from [REDACTED_PATH].
+
+12 quantitative variable(s) included as covariate(s).
+5796 individuals are in common in these files.
+
+Performing  REML analysis ... (Note: may take hours depending on sample size).
+5796 observations, 13 fixed effect(s), and 2 variance component(s)(including residual variance).
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 483.957 507.049
+logL: -22808.5
+Running AI-REML algorithm ...
+Iter.	logL	V(G)	V(e)	
+1	-22803.90	320.46336	645.98607	
+2	-22771.32	219.05781	738.62514	
+3	-22756.51	155.11462	800.15696	
+4	-22749.84	114.22572	840.98872	
+5	-22746.84	87.76349	868.11908	
+6	-22745.49	70.45885	886.19576	
+7	-22744.88	59.04204	898.28167	
+8	-22744.61	35.03236	923.94079	
+9	-22744.38	35.92106	923.22165	
+10	-22744.38	35.90592	923.23684	
+11	-22744.38	35.90620	923.23656	
+Log-likelihood ratio converged.
+
+Calculating the logLikelihood for the reduced model ...
+(variance component 1 is dropped from the model)
+Calculating prior values of variance components by EM-REML ...
+Updated prior values: 959.08829
+logL: -22745.24290
+Running AI-REML algorithm ...
+Iter.	logL	V(e)	
+1	-22744.96	959.07868	
+2	-22744.96	959.05788	
+Log-likelihood ratio converged.
+
+Summary result of REML analysis:
+Source	Variance	SE
+V(G)	35.906204	34.650654
+V(e)	923.236565	38.270163
+Vp	959.142769	17.842458
+V(G)/Vp	0.037436	0.036103
+
+Sampling variance/covariance of the estimates of variance components:
+1.200668e+03	-1.173460e+03	
+-1.173460e+03	1.464605e+03	
+
+Summary result of REML analysis has been saved in the file [REDACTED_PATH].
+
+Analysis finished [TIMESTAMP]
+Overall computational time: 1 minute 43 sec.
