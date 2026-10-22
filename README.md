@@ -28,7 +28,7 @@ This script can be run independently of the other repository scripts, provided t
 
 ### GCTA GREML
 
-GCTA GREML log files document variance component estimation of statin-adjusted LDL-C. the logs contain aggregate analysis outputs including sample sizes, variance component estimates, and standard errors.
+GCTA GREML log files document variance component estimation of statin-adjusted LDL-C. The logs contain aggregate analysis outputs including sample sizes, variance component estimates, and standard errors and can be found in `gcta_logs`.
 
 The committed log files are sanitized to remove host identifiers and file-system paths. 
 
