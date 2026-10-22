@@ -26,13 +26,27 @@ Generates Manhattan and QQ plots for SNP-by-sex interaction results and calculat
 
 This script can be run independently of the other repository scripts, provided the required GxSex input file is available.
 
+### GCTA GREML
+
+GCTA GREML log files document variance component estimation of statin-adjusted LDL-C. the logs contain aggregate analysis outputs including sample sizes, variance component estimates, and standard errors.
+
+The committed log files are sanitized to remove host identifiers and file-system paths. 
+
+The alphabetically ordered scripts form a sequential workflow and should be run in alphbetical order.
+
+| Script | Purpose |
+|---------|---------|
+| `A_read_gcta_logs.R` | Parses GCTA REML log files and combines variance component and SNP heritability estimates, including standard errors, into a single results object. |
+| `B_plot_gcta_heritability.R` | Plots GCTA REML variance component and heritability estimates with approximate 95% confidence intervals, comparing females and males across statin status and LDL-C phenotype.|
+| `C_test_gcta_sex_differences.R` | Tests for sex differences in GCTA REML variance component and heritability estimates using z-tests.|
+
 ## Data Availability
 The summary statistics used in this analysis are available on Zenodo:  
 [https://doi.org/10.5281/zenodo.19333986](https://doi.org/10.5281/zenodo.19333986)
 
 Individual-level data, including genomic and phenotype data, from the All of Us Research Program are not included in this repository. Access to restricted data requires authorization through the All of Us Researcher Workbench.
 
-This repository currently contains post-GWAS, XWAS, and GxSex analyses. Additional analyses, including heritability summaries, may be incorporated in future updates.
+This repository currently contains post-GWAS, XWAS, GxSex, and GCTA REML analyses materials. The GCTA logs provide aggregate estimates and execution records; the underlying individual-level data and genetic relationship matrices are not distributed here.
 
 ## References
 
